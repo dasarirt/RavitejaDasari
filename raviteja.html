@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Assistant&display=swap"
+	rel="stylesheet">
+<title>Raviteja Dasari</title>
+</head>
+
+<script>
+	
+	$(document).ready(function() {
+
+		var now = new Date();
+		var hrs = now.getHours();
+		var msg = "";
+
+		if (hrs >=  0) msg = "Morning Sunshine"; // REALLY early
+		if (hrs >=  6) msg = "Good Morning";      // After 6am
+		if (hrs >= 12) msg = "Good Afternoon";    // After 12pm
+		if (hrs >= 17) msg = "Good Evening";      // After 5pm
+		if (hrs >= 22) msg = "Go to bed";        // After 10pm
+		
+		$('#greeting').html(msg);
+		
+		$("#amdiv").hide();
+		$("#ediv").hide();
+		$("#ccdiv").hide();
+		$("#tsdiv").hide();
+		$("#bediv").hide();
+		$("#ldiv").hide();
+		$("#adiv").hide();
+
+		$("#amli").click(function() {
+			
+			document.title = 'Raviteja Dasari - About';
+			
+			$("#amli").css({
+				"background-color" : "white"
+			});
+			$("#eli").css("background-color", "#fafafa");
+			$("#ccli").css("background-color", "#fafafa");
+			$("#tsli").css("background-color", "#fafafa");
+			$("#beli").css("background-color", "#fafafa");
+			$("#loli").css("background-color", "#fafafa");
+			$("#ali").css("background-color", "#fafafa");
+
+			$("#amdiv").show();
+			$("#ediv").hide();
+			$("#ccdiv").hide();
+			$("#tsdiv").hide();
+			$("#bediv").hide();
+			$("#ldiv").hide();
+			$("#adiv").hide();
+			$("#indiv").hide();
+		});
+		$("#eli").click(function() {
+
+			document.title = 'Raviteja Dasari - Education';
+			
+			$("#amli").css("background-color", "#fafafa");
+			$("#eli").css({
+				"background-color" : "white"
+			});
+			$("#ccli").css("background-color", "#fafafa");
+			$("#tsli").css("background-color", "#fafafa");
+			$("#beli").css("background-color", "#fafafa");
+			$("#loli").css("background-color", "#fafafa");
+			$("#ali").css("background-color", "#fafafa");
+
+			$("#amdiv").hide();
+			$("#ediv").show();
+			$("#ccdiv").hide();
+			$("#tsdiv").hide();
+			$("#bediv").hide();
+			$("#ldiv").hide();
+			$("#adiv").hide();
+			$("#indiv").hide();
+		});
+		$("#ccli").click(function() {
+			
+			document.title = 'Raviteja Dasari - Certificates';
+
+			$("#amli").css("background-color", "#fafafa");
+			$("#eli").css("background-color", "#fafafa");
+			$("#ccli").css({
+				"background-color" : "white"
+			});
+			$("#tsli").css("background-color", "#fafafa");
+			$("#beli").css("background-color", "#fafafa");
+			$("#loli").css("background-color", "#fafafa");
+			$("#ali").css("background-color", "#fafafa");
+
+			$("#amdiv").hide();
+			$("#ediv").hide();
+			$("#ccdiv").show();
+			$("#tsdiv").hide();
+			$("#bediv").hide();
+			$("#ldiv").hide();
+			$("#adiv").hide();
+			$("#indiv").hide();
+		});
+		$("#tsli").click(function() {
+
+			document.title = 'Raviteja Dasari - Skills';
+			
+			$("#amli").css("background-color", "#fafafa");
+			$("#eli").css("background-color", "#fafafa");
+			$("#ccli").css("background-color", "#fafafa");
+			$("#tsli").css({
+				"background-color" : "white"
+			});
+			$("#beli").css("background-color", "#fafafa");
+			$("#loli").css("background-color", "#fafafa");
+			$("#ali").css("background-color", "#fafafa");
+
+			$("#amdiv").hide();
+			$("#ediv").hide();
+			$("#ccdiv").hide();
+			$("#tsdiv").show();
+			$("#bediv").hide();
+			$("#ldiv").hide();
+			$("#adiv").hide();
+			$("#indiv").hide();
+		});
+		$("#beli").click(function() {
+
+			document.title = 'Raviteja Dasari - Experience';
+			
+			$("#amli").css("background-color", "#fafafa");
+			$("#eli").css("background-color", "#fafafa");
+			$("#ccli").css("background-color", "#fafafa");
+			$("#tsli").css("background-color", "#fafafa");
+			$("#beli").css({
+				"background-color" : "white"
+			});
+			$("#loli").css("background-color", "#fafafa");
+			$("#ali").css("background-color", "#fafafa");
+
+			$("#amdiv").hide();
+			$("#ediv").hide();
+			$("#ccdiv").hide();
+			$("#tsdiv").hide();
+			$("#bediv").show();
+			$("#ldiv").hide();
+			$("#adiv").hide();
+			$("#indiv").hide();
+		});
+		$("#loli").click(function() {
+
+			document.title = 'Raviteja Dasari - Download Resume';
+			
+			$("#amli").css("background-color", "#fafafa");
+			$("#eli").css("background-color", "#fafafa");
+			$("#ccli").css("background-color", "#fafafa");
+			$("#tsli").css("background-color", "#fafafa");
+			$("#beli").css("background-color", "#fafafa");
+			$("#loli").css({
+				"background-color" : "white"
+			});
+			$("#ali").css("background-color", "#fafafa");
+
+			$("#amdiv").hide();
+			$("#ediv").hide();
+			$("#ccdiv").hide();
+			$("#tsdiv").hide();
+			$("#bediv").hide();
+			$("#ldiv").show();
+			$("#adiv").hide();
+			$("#indiv").hide();
+		});
+		$("#ali").click(function() {
+
+			document.title = 'Raviteja Dasari - Achievements';
+			
+			$("#amli").css("background-color", "#fafafa");
+			$("#eli").css("background-color", "#fafafa");
+			$("#ccli").css("background-color", "#fafafa");
+			$("#tsli").css("background-color", "#fafafa");
+			$("#beli").css("background-color", "#fafafa");
+			$("#loli").css("background-color", "#fafafa");
+			$("#ali").css({
+				"background-color" : "white"
+			});
+
+			$("#amdiv").hide();
+			$("#ediv").hide();
+			$("#ccdiv").hide();
+			$("#tsdiv").hide();
+			$("#bediv").hide();
+			$("#ldiv").hide();
+			$("#adiv").show();
+			$("#indiv").hide();
+		});
+	});
+	
+</script>
+
+<style>
+@media screen and (max-width: 700px) {
+	#photoDiv {
+		display: none;
+	}
+	#myPhotoId {
+		width: 350px;
+	}
+	#achivePhotoId {
+		display: none;
+	}
+}
+
+.fa {
+	padding: 8px;
+	font-size: 20px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+	opacity: 0.9;
+}
+
+.fa-skype {
+	background: #00aff0;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+</style>
+
+<body>
+
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Contact Me!</h4>
+				</div>
+				<div class="modal-body">
+					<table width="100%" style="font-family: calibry; font-size: 15px">
+						<tr>
+							<td width="15%"><b>Phone:</b></td>
+							<td>(+91) 9014745813</td>
+						</tr>
+						<tr>
+							<td><b>Mail:</b></td>
+							<td><a href="mailto:dasariraviteja55@gmail.com">dasariraviteja55@gmail.com</td>
+						</tr>
+						<tr>
+							<td><b>Address:</b></td>
+							<td>House Number: 4-160/34, OM Nagar Colony, Kismathpur,
+								Hyderabad, Telangana - 500086</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div
+		style="text-align: center; margin-top: 30px; width: 100%; float: left;">
+		<img id="myPhotoId" src="signature.png" alt="Sign"
+			style="height: 150px;"><br>
+
+		<div style="float: right;">
+
+			<!-- Linked IN -->
+			<a class="btn btn-social link-accent mr-1"
+				href="https://www.linkedin.com/company/mitratech/" target="_blank"
+				rel="noopener"> <i class="icon-linkedin"></i> <span
+				class="sr-only">icon-linkedin</span>
+			</a>
+
+			<!-- Skype -->
+			<a href="https://www.linkedin.com/in/raviteja-dasari" target="_blank"
+				class="fa fa-linkedin"></a> <a
+				href="https://join.skype.com/invite/yuynqncJXlar" target="_blank"
+				class="fa fa-skype"></a>
+
+			<!-- Facebook -->
+			<a href="https://www.facebook.com/dasariraviteja55" target="_blank"
+				class="fa fa-facebook"></a>
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+				data-target="#myModal"
+				style="margin-bottom: 8px; background-color: #e0e0e0; color: black; border: 1px solid black; font-size: 14px">
+				<b>Contact me</b>
+			</button>
+		</div>
+	</div>
+
+	<div style="float: left; width: 100%; text-align: center;">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid" style="background-color: #fafafa">
+				<ul class="nav navbar-nav" style="margin-left: 2%; font-size: 12px">
+					<li id="amli"><a href="#">ABOUT ME</a></li>
+					<li id="eli"><a href="#">EDUCATION</a></li>
+					<li id="ccli"><a href="#">CERTIFICATE COURCES</a></li>
+					<li id="tsli"><a href="#">TECHNICAL SKILLS</a></li>
+					<li id="beli"><a href="#">EXPERIENCE</a></li>
+					<li id="ali"><a href="#">ACHIEVEMENTS</a></li>
+					<li id="loli"><a href="#">DOWNLOWD RESUME</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+
+	<div style="float: left; width: 100%; margin-left: 3%; height: 100px">
+		<div id="photoDiv" style="float: left; width: 20%">
+			<img style="border-radius: 80%; height: 250%; float: left;"
+				src="ravitejadasari.jpg" alt="photo">
+		</div>
+
+
+		<div
+			style="margin-left: 1%; margin-right: 5px; height: 400px; float: left; width: 75%">
+
+			<div id="amdiv"
+				style="margin: 20px 40px 20px 40px; font-family: calibri;">
+				Hi, I'm Ravi.<br> <br>
+				Hardworker.Developer.Explorer.Foodie.Traveller. <br> <br>I
+				was born and raised in India. Currently living in Hyderabad, pursued
+				my bachelor's in Electronics at JNTU Hyderabad . I began my career
+				in Capgemini Pvt Ltd, I was trained in java and worked as a full
+				stack developer. Developed automation tools from scratch in Spring
+				handling both UI and back-end and also interpreted data in order to
+				draw conclusion, as data analyst. Currently working as Lead
+				TeamConnect Product Developer in Professional Services Team at
+				Mitratech. 
+				<br/><br/>Say Hi on Twitter <a
+					href="https://twitter.com/Dasarabbai"> <span
+					style="color: blue">@Dasarabbai</span></a>
+			</div>
+			<div id="indiv"
+				style="margin: 20px 40px 20px 40px; font-family: 'Bree Serif', serif;">
+				<div style="margin-left: 50px">
+					<span style="font-size: 60px"><b><span id="greeting"></span>
+		<span >&#9786;</span></b></span><br> <span
+						style="font-size: 20px; font-family: 'Assistant', sans-serif;">I'm
+						Raviteja Dasari,<br>A self motivated Full Stack-Developer,
+						TeamConnect product expert and Professional Trainer at Ankura
+						Academy<br> <span style="color: grey"><i>Senior
+								Technical Consultant</i></span>
+					</span>
+				</div>
+			</div>
+
+			<div id="ediv"
+				style="margin: 20px 20px 20px 80px; font-family: calibri;">
+				<table>
+					<tr style="border-bottom: 1px solid #e0e0e0; text-align: center">
+						<td style="width: 20%"><img src="jntuhlogo.png" alt="JNTU"></td>
+						<td><b><a href="http://jntuh.ac.in/" target="_black">JNTU
+									Hyderabad</b></a><br>Bachelor's in Electronic and Communication
+							Engineering, 87% aggregate<br> <span style="color: grey">2013-2017</span><br>
+							<br></td>
+					</tr>
+					<tr style="border-bottom: 1px solid #e0e0e0; text-align: center">
+						<td style="width: 20%"><img src="nri.png" alt="NRI"
+							style="width: 70%"></td>
+						<td><br> <b><a
+								href="http://nrieducationalsociety.com/" target="_blank">NRI
+									Junior College</a></b><br>Mathematics, Physics and Chemistry,
+							96.2% aggregate<br> <span style="color: grey">2011-2013</span></td>
+					</tr>
+					<tr style="border-bottom: 1px solid #e0e0e0; text-align: center">
+						<td style="width: 20%"><img src="school.png" alt="Sign"
+							style="width: 85%"></td>
+						<td><br> <b><a
+								href="https://schools.org.in/anantapur/28223790259/mpl-boys-hs-kothapeta.html"
+								target="_blank">S.P.C.S.Mpl High School</a></b><br>SSC, 91.1%
+							aggregate<br> <span style="color: grey">2001-2011</span><br>
+							<br></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="ccdiv"
+				style="margin: 20px 40px 20px 40px; font-family: calibri; text-align: center;">
+				<div style="float: left;">
+					<img src="oracle7.png" alt="Sign" style="height: 170px;"> <br>
+					<b>Java SE 7</b>
+				</div>
+				<div style="float: left;">
+					<img src="oracle8.png" alt="Sign" style="height: 170px;"> <br>
+					<b>Java SE 8</b>
+				</div>
+			</div>
+
+
+			<div id="tsdiv"
+				style="margin: 20px 0px 20px 40px; font-family: calibri;">
+				<b>Programming Languages:</b> Java, Python, C, JavaScript, Java
+				(Core, JSP, J2EE, Servlets, JDBC), MATLAB<br> <b>Frameworks:</b>
+				Spring, MVC, React JS, Bootstrap 4, Hibernate, JPA, JAX-RS.<br>
+				<b>Technologies:</b> HTML5, CSS, JavaScript, jQuery, AJAX calls,
+				JSON, XML<br> <b>Web Services:</b> REST (JAX-RS), SOAP<br>
+				<b>Operating Systems:</b> Windows, Linux<br> <b>Tools/Applications:</b>
+				STS, Eclipse, Visual Studio Code, PyCharm, Anaconda, Spider, PUTTY,
+				GitHub, GitLab<br> <b>Databases:</b> MySQL, ORACLE, MongoDB,
+				RDBMS<br> <b>Version Control:</b> SVN, Git, Version One<br>
+
+			</div>
+			<div id="bediv"
+				style="margin: 20px 10px 20px 40px; font-family: calibri;">
+				<table>
+
+
+					<!-- Mitratech Experience Start -->
+					<tr>
+						<td style="text-align: right">
+						
+						<a href="https://mitratech.com/" target="_blank"><img src="mitratech.png"
+							alt="Mitratech" style="height: 30px; width: 210px"></a>
+						</td>
+						
+					</tr>
+
+					<td><br> <span style="font-weight: bold;">Mitratech,</span>
+						<span style="color: grey;"><i> Full time, Senior
+								Technical Consultant, TeamConnect Developer</i></span> <span
+						style="float: right"><b>Aug 2021 - Present</b></span></td>
+
+					<tr>
+						<td style="font-size: 13px; font-family: calibri"><br>
+							<div style="margin-left: 20px; width: 90%">
+								<b>TeamConnect:</b> is the proven end-to-end platform for Legal
+								Operations to deliver more efficient legal services to the rest
+								of the organization, combining matter management, e billing,
+								legal spend management, document management, reporting and
+								analytics, and processing automation.
+								<ul>
+									<li>Worked on the integration of TeamConnect product with
+										external document management system like Box, OpenText and Net Documents
+										.</li>
+									<li>Worked on the integration of TeamConnect product with SharePoint and Google Drive</li>
+									<li>Working as mentor for Junior team members</li>
+								</ul>
+							</div></td>
+					</tr>
+
+
+					<td><br> <span style="font-weight: bold;">Mitratech,</span>
+						<span style="color: grey;"><i> Full time, Technical
+								Consultant, TeamConnect Developer</i></span> <span style="float: right"><b>Oct
+								2019 - Aug 2021</b></span></td>
+
+					<tr>
+						<td style="font-size: 13px; font-family: calibri"><br>
+							<div style="margin-left: 20px; width: 90%">
+								<b>TeamConnect:</b> is the proven end-to-end platform for Legal
+								Operations to deliver more efficient legal services to the rest
+								of the organization, combining matter management, e billing,
+								legal spend management, document management, reporting and
+								analytics, and processing automation. <br>
+								<ul>
+									<li>Create the customized rules (Custom Action, Custom
+										Condition, Validation, Scheduled Actions and wizards) as per
+										client’s requirement.</li>
+									<li>Worked on the integraton of TeamConnect product with TAP (A Mitratech product)</li>
+								</ul>
+							</div></td>
+					</tr>
+					<!-- Mitratech Experience END -->
+
+					<!-- Capgemini Experience Start -->
+					<tr>
+						<td style="text-align: right">
+						
+						<a href="https://www.capgemini.com/" target="_blank">
+						<img src="cg_logo.jpg"
+							alt="cgLogo" style="height: 50px;">
+						</a>
+						</td>
+					</tr>
+					<tr>
+						<td><br> <span style="font-weight: bold;">Capgemini
+								India Pvt Ltd,</span> <span style="color: grey;"><i> Full
+									time, Senior Software Engineer, Lead Developer</i></span> <span
+							style="float: right"><b>Oct 2018 - Oct 2019</b></span></td>
+					</tr>
+					<tr>
+						<td style="font-size: 13px; font-family: calibri"><br>
+							<div style="margin-left: 20px; width: 90%">
+								<b>Work Intake tool:</b> Tracking the project work in agile
+								teams is very hard when the project needs to be started from the
+								gathering requirements and getting approval from the managers.
+								This tool helps managers to track the project at different
+								stages. User stories will also be created in VersionOne once
+								requirements get approved.<br>
+								<ul>
+									<li>Integrated the tool with Version one rest API. Manager
+										can choose between Epic, feature or story based on the
+										requirement. Epics and Stories can also be updated or deleted
+										from the tool itself. Integrated different APIs for retrieving
+										information.</li>
+									<li>Built the web application in spring framework from the
+										scratch by maintaining both front and back end.</li>
+								</ul>
+							</div></td>
+					</tr>
+					<tr>
+						<td><br> <span style="font-weight: bold;">Capgemini
+								India Pvt Ltd,</span> <span style="color: grey;"><i> Full
+									time, Software Engineer, Lead Developer</i></span> <span
+							style="float: right"><b>July 2017 - Oct 2018</b></span></td>
+					</tr>
+					<tr>
+						<td style="font-size: 13px; font-family: calibri"><br>
+							<div style="margin-left: 20px; width: 90%">
+								<b>Outage Reporting Tool: </b> Outages are very common to any
+								software applications which are dependent on various linked
+								components and web services. Outage reporting tool helps all
+								support level people to effectively document and report the
+								outages to the concerned teams through automated mails.<br>
+								<ul>
+									<li>Built the web application in spring framework from the
+										scratch by maintaining both front and back end.</li>
+									<li>Given multiple dynamic inputs in the form for the UI
+										of the page.</li>
+								</ul>
+							</div></td>
+					</tr>
+					<!-- Capgemini Experience END -->
+
+				</table>
+			</div>
+			<div id="ldiv"
+				style="margin: 20px 10px 20px 40px; font-family: calibri;">
+
+				<table>
+
+					<tr style="text-align: center">
+
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+						<span style="font-size: 20px; font-family: 'Assistant', sans-serif;">
+							Click <a
+								href="https://github.com/ravitejaaaaa/Resume/blob/main/20210729_Doc_Security-806014%20(2).docx?raw=true">
+									<b>here</b>
+							</a> to download my resume
+						</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="adiv"
+				style="margin: 20px 10px 20px 40px; font-family: calibri;">
+				<table>
+					<tr style="text-align: center">
+						<td><img src="achive.png" alt="achieve"
+							style="height: 200px;"></td>
+					</tr>
+
+					<tr>
+						<td><h3>Academic Awards</h3></td>
+					</tr>
+
+					<tr>
+						<td>&#8226;&nbsp;&nbsp;Graduation distinctions with academic
+							topper of the University</td>
+					</tr>
+					<tr>
+						<td>&#8226;&nbsp;&nbsp;Student of the Year award</td>
+					</tr>
+					<tr>
+						<td>&#8226;&nbsp;&nbsp;Winning streak for Poster
+							Presentations of college fests</td>
+					</tr>
+					<tr>
+						<td><h3>Work-related awards and achievements</h3></td>
+					</tr>
+					<tr>
+						<td>&#8226;&nbsp;&nbsp;Received 3 Rockstar awards for
+							exemplifying Ownership.</td>
+					</tr>
+					<tr>
+						<td>&#8226;&nbsp;&nbsp;Awarded with Pat on the Back in the
+							first 3 months of joining the project at Capgemini.</td>
+					</tr>
+					<tr>
+						<td>&#8226;&nbsp;&nbsp;Stood 2nd in the training batch where
+							we got trained on Java J2EE applications at Capgemini.</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+</body>
+</html>
